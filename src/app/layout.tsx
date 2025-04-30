@@ -2,8 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Payment Gateway",
-  description: "A simple payment gateway with Stripe and Paypal",
+  title: {
+    default: "Pay Me!!",
+    template: "%s | Pay Me!!",
+  },
+  description: "A simple payment gateway with Stripe",
 };
 
 export default function RootLayout({

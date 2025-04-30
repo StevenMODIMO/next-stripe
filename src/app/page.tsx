@@ -3,7 +3,7 @@ import Pay from "@/components/Pay";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen dark:bg-[#1f1f1f]">
+    <div className="h-screen overflow-y-auto w-screen bg-[#1f1f1f]">
       <Header />
       <Pay />
     </div>
