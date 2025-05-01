@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-[url(public/bg.jpeg)]">{children}</body>
     </html>
   );
 }

@@ -128,10 +128,10 @@ export default function Pay() {
                 theme: "flat",
                 labels: "floating",
                 variables: {
-                  colorPrimary: "#34d399", // green-400
+                  colorPrimary: "#34d399",
                   colorBackground: "#1b1b1b",
                   colorText: "#ffffff",
-                  colorDanger: "#ef4444", // red-500
+                  colorDanger: "#ef4444",
                   fontFamily: "Inter, sans-serif",
                   spacingUnit: "2px",
                   borderRadius: "2px",
@@ -194,7 +194,6 @@ const PaymentForm = () => {
     });
     if (error) {
       setLoading(false);
-      // Show error to your customer (like "Your card was declined")
       setMessage(error.message ?? "An unexpected error occurred.");
     }
   };
@@ -202,7 +201,7 @@ const PaymentForm = () => {
     <div>
       <form onSubmit={confirmHandler}>
         <PaymentElement options={{ layout: "auto" }} />
-        <button className="w-fit my-3 mx-auto text-white p-2 rounded-tr rounded-bl cursor-pointer bg-green-400 hover:bg-white hover:border-2 hover:border-green-400">
+        <button className="w-fit my-3 mx-auto text-white p-2 rounded-tr rounded-bl cursor-pointer bg-green-400">
           {!loading ? (
             <span>Complete Payment</span>
           ) : (
